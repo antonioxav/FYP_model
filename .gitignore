@@ -1,0 +1,9 @@
+instances/*
+logs/*
+__pycache__
+
+*.npz
+*.npy
+*.csv
+*.pickle
+*.zip
