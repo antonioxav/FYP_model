@@ -7,6 +7,7 @@
   - factor selection
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
+
 '''bash
 |____preparator.py
 |____val_exp.ipynb
