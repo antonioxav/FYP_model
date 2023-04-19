@@ -7,7 +7,7 @@
   - factor selection
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
-
+''' bash
 |____preparator.py
 |____val_exp.ipynb
 |____LICENSE
@@ -86,3 +86,4 @@
 | |____index
 | |____packed-refs
 |____main.py
+'''
