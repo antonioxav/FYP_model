@@ -8,7 +8,7 @@
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
 
-
+## file structure
 * model
   * __init__.py
   * backbone.py
@@ -29,12 +29,12 @@
     * AAPL.jpg
     * AMZN.jpg
     * MSFT.jpg
-  * all_exp.ipynb
-  * eval.ipynb
-  * macro_exp.ipynb
-  * main.py
-  * preparator.py
-  * tech_exp.ipynb
-  * train.py
-  * transformer_model.ipynb
-  * val_exp.ipynb
+* all_exp.ipynb
+* eval.ipynb
+* macro_exp.ipynb
+* main.py
+* preparator.py
+* tech_exp.ipynb
+* train.py
+* transformer_model.ipynb
+* val_exp.ipynb
