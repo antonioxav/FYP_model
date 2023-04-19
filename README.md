@@ -8,12 +8,11 @@
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
 
-'''bash
-|____preparator.py
-|____val_exp.ipynb
-|____LICENSE
-|______init__.py
-|____utils
+
+|-preparator.py
+|-val_exp.ipynb
+|-__init__.py
+|-utils
 | |______init__.py
 | |____plot_utils.py
 |____tech_exp.ipynb
@@ -87,4 +86,3 @@
 | |____index
 | |____packed-refs
 |____main.py
-'''
