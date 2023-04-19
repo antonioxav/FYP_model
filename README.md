@@ -8,10 +8,9 @@
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
 
-## file structure
+## File structure
 * model
-  * __init__.py
-  * backbone.py
+  * backbone.py: includes linear backbone class and convolution backbone class to project the dataset into a lower dimension dataset before feeding it to the pre-processor
   * model.py
   * positional_encoding.py
   * transformer.py
