@@ -7,6 +7,10 @@
   - factor selection
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
+  - train.py: 
+    - Summary: Imports the transformer model from model.py then creates and runs the model based the inputs provided.
+    - Inputs: ticker, pillar
+    - Outputs: Saves an instance of the generated model and the model progress 
 
 ## File structure
 * model
