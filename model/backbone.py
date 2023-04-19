@@ -119,5 +119,5 @@ def get_backbone(type: str, output_dim):
     if type=='linear':
         return LinearBackbone(output_dim, 2)
     elif type=='conv':
-        return ConvBackbone(output_dim, [3, 3], dropout=0.2)
+        return ConvBackbone(output_dim, [3], dropout=0.2)
     return lambda x: x

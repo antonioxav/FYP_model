@@ -10,8 +10,8 @@ def create_model(shape, task, d_k, d_v, n_heads, ff_dim, schedule_lr = False):
   '''Initialize time and transformer layers'''
   attn_layer1 = TransformerEncoder(d_k, d_v, n_heads, ff_dim)
   attn_layer2 = TransformerEncoder(d_k, d_v, n_heads, ff_dim)
-#   attn_layer3 = TransformerEncoder(d_k, d_v, n_heads, ff_dim)
-  backbone = get_backbone('conv', 8)
+  attn_layer3 = TransformerEncoder(d_k, d_v, n_heads, ff_dim)
+  backbone = get_backbone('linear', 4)
 
   '''Construct model'''
   in_seq = Input(shape=shape)
@@ -23,7 +23,7 @@ def create_model(shape, task, d_k, d_v, n_heads, ff_dim, schedule_lr = False):
 
   x = attn_layer1((x, x, x))
   x = attn_layer2((x, x, x))
-#   x = attn_layer3((x, x, x))
+  x = attn_layer3((x, x, x))
   x = GlobalAveragePooling1D(data_format='channels_first')(x)
   x = Dropout(0.3)(x)
   x = Dense(64, activation='relu')(x)
@@ -33,7 +33,8 @@ def create_model(shape, task, d_k, d_v, n_heads, ff_dim, schedule_lr = False):
   model = Model(inputs=in_seq, outputs=out)
   loss = {
     'bc': tf.keras.losses.BinaryCrossentropy(from_logits=True),
-    'reg': tf.keras.losses.MeanSquaredError()
+    'reg': tf.keras.losses.Huber(delta=0.1) 
+    # 'reg': tf.keras.losses.MeanSquaredError()
   }
 
   lr_scheduler = tf.keras.optimizers.schedules.ExponentialDecay(0.001, 256*10, 0.95, staircase=False, name=None)

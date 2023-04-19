@@ -2,6 +2,10 @@ instances/*
 logs/*
 __pycache__
 
+Copy_of_AAPL_Transformer_Model_Close_return_gmean_3_huber(0_01)_encoder(4).ipynb
+Fundamental_conv_pca.ipynb
+transformer_model.ipynb
+
 *.npz
 *.npy
 *.csv
