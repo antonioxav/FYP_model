@@ -63,15 +63,15 @@ def prepare(ticker, path, prefix, seq_len, pca=None, task='reg', save=True):
     return X_train, y_train, X_val, y_val, X_test, y_test
 
 if __name__=='__main__':
-    # prepare('AAPL','macro','macro', 10, pca='all', task='reg')
-    # prepare('AMZN','macro','macro', 10, pca='all', task='reg')
+    prepare('AAPL','macro','macro', 10, pca='all', task='reg')
+    prepare('AMZN','macro','macro', 10, pca='all', task='reg')
     prepare('MSFT','macro','macro', 10, pca='all', task='reg')
-    # prepare('SPY','macro','macro', 10, pca='all', task='reg')
+    prepare('SPY','macro','macro', 10, pca='all', task='reg')
 
-    # prepare('AAPL','value','value', 10, pca='all', task='reg')
-    # prepare('AMZN','value','value', 10, pca='all', task='reg')
-    # prepare('MSFT','value','value', 10, pca='all', task='reg')
+    prepare('AAPL','value','value', 10, pca='all', task='reg')
+    prepare('AMZN','value','value', 10, pca='all', task='reg')
+    prepare('MSFT','value','value', 10, pca='all', task='reg')
 
-    # prepare('AAPL','all','all', 10, pca='all', task='reg')
-    # prepare('AMZN','all','all', 10, pca='all', task='reg')
-    # prepare('MSFT','all','all', 10, pca='all', task='reg')
+    prepare('AAPL','all','all', 10, pca='all', task='reg')
+    prepare('AMZN','all','all', 10, pca='all', task='reg')
+    prepare('MSFT','all','all', 10, pca='all', task='reg')

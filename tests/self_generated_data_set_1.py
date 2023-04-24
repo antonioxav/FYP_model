@@ -12,6 +12,6 @@ df_train = close_df.iloc[:int(0.8*close_df.shape[0]),:]
 df_val = close_df.iloc[int(0.8*close_df.shape[0]):int(0.9*close_df.shape[0]),:]
 df_test = close_df.iloc[int(0.9*close_df.shape[0]):,:]
 
-df_train.to_csv('data/processed/test/self_generated_data_set_1_train.csv')
-df_val.to_csv('data/processed/test/self_generated_data_set_1_val.csv')
-df_test.to_csv('data/processed/test/self_generated_data_set_1_test.csv')
+df_train.to_csv('data/processed/test/dataset1_test_train.csv')
+df_val.to_csv('data/processed/test/dataset1_test_val.csv')
+df_test.to_csv('data/processed/test/dataset1_test_test.csv')
