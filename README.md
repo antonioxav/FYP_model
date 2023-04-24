@@ -2,6 +2,7 @@
 
 - File Structure:
   - FYP_model:
+  ```lua
   .
   |   .gitignore
   |   all_exp.ipynb
@@ -80,7 +81,7 @@
           plot_utils.py
           preprocessing_utils.py
           __init__.py
-
+  ```
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
   - Backbone.py
