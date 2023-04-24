@@ -82,7 +82,19 @@
           preprocessing_utils.py
           __init__.py
   ```
-- workflow -> preprocessing -> preparator -> train -> eval
+
+- Workflow: pre-processing -> preparator -> train -> evaluation
+- Pre-processing:
+  - Use the individual {pillar name}_exp.ipynb files to do the data pre-processing for the chosen factor individual or combined factor pillar model.
+  NOTE: For the fundamental model, run the the Factor_Selection.ipynb notebook separately to get the most signficant fundamental features, which shall be then fed into the pre-processing.
+- Preparator:
+  - Use the preparator.py file to reshape the pre-processed data into a model-feedable shape.
+- Train:
+  - Use the train.py file for training the model itself for the selected pillar or combined.
+- Evaluation:
+  - Use the eval.ipynb to view the model results.
+
+
 - What each file does and outputs
   - Backbone.py
     - Summary:  includes linear backbone class and convolution backbone class to project the dataset into a lower dimension dataset before feeding it to the pre-processor
