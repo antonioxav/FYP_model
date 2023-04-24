@@ -1,7 +1,6 @@
 # Multifactor Transformer Model
 
 - File Structure:
-  - FYP_model:
   ```lua
   .
   |   .gitignore
