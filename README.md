@@ -1,7 +1,8 @@
 # Multifactor Transformer Model
 
 - File Structure:
-  - FYP_model:.
+  - FYP_model:
+  .
   |   .gitignore
   |   all_exp.ipynb
   |   eval.ipynb
@@ -79,6 +80,7 @@
           plot_utils.py
           preprocessing_utils.py
           __init__.py
+
 - workflow -> preprocessing -> preparator -> train -> eval
 - What each file does and outputs
   - Backbone.py
